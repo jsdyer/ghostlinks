@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#17201c">
+  <meta name="description" content="Follow the traces of old Canadian government URLs through archive captures and observed redirects.">
+  <title>Ghost Links · CoolCode</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#research">Skip to research</a>
+<header class="mast">
+  <div class="wrap mast-inner">
+    <a class="brand" href="https://coolcode.ca/"><span class="mark" aria-hidden="true">&gt;_</span>CoolCode<span>.ca</span></a>
+    <nav aria-label="Research tools">
+      <a href="https://coolcode.ca/opendatagraveyard/">Open Data Graveyard</a>
+      <a href="#methods">Sources &amp; limits</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <p class="kicker">Canadian web history</p>
+        <h1>Ghost Links<span>.</span></h1>
+        <p>Follow disappeared government URLs through dated captures, observed redirects, and the pages that took their place.</p>
+        <a class="action" href="#research">Investigate a URL <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="slip" aria-label="Collection overview">
+        <div class="slip-top"><span>WEB ADDRESS RECORD</span><span aria-hidden="true">CA</span></div>
+        <p>When a URL stops working, its archive can still tell you where to look.</p>
+        <dl>
+          <div><dt>Research files</dt><dd id="case-count">—</dd></div>
+          <div><dt>Indexed captures</dt><dd id="capture-count">—</dd></div>
+          <div><dt>URL checks</dt><dd id="checked">—</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+  <div class="wrap workbench" id="research">
+    <section class="panel url-panel" aria-labelledby="url-heading">
+      <h2 id="url-heading">Investigate a URL</h2>
+      <form id="url-form">
+        <label for="target">Old address or domain</label>
+        <div class="input-row">
+          <input id="target" type="text" inputmode="url" placeholder="www.hc-sc.gc.ca/index-eng.php" maxlength="2048" autocomplete="off" spellcheck="false" aria-describedby="url-help">
+          <button class="action" type="submit">Find archive links</button>
+        </div>
+        <p class="help" id="url-help">Use public addresses. Opening a lookup passes the address to the archive you choose.</p>
+      </form>
+      <p id="url-status" class="status" role="status"></p>
+      <div id="url-links" class="links"></div>
+      <div id="closest" hidden>
+        <form id="closest-form">
+          <label for="archive-date">Closest capture on or around a date</label>
+          <div class="links">
+            <input id="archive-date" type="date" aria-label="Archive lookup date">
+            <button class="button" id="find-capture" type="submit">Ask Wayback</button>
+          </div>
+          <p class="help">Leave the date blank for a recent indexed capture. This sends the URL to the Internet Archive.</p>
+        </form>
+        <p id="capture-status" class="status" role="status"></p>
+        <div id="capture-result" class="links"></div>
+      </div>
+      <details class="import">
+        <summary>Import CDX or index results</summary>
+        <p>Load a Wayback CDX JSON array or newline-delimited Common Crawl index export to make a local timeline. Your file stays in this browser.</p>
+        <div class="links">
+          <label class="file-link">Choose index file<input id="index-file" type="file" accept=".json,.jsonl,.ndjson,.txt,.cdx,text/plain,application/json"></label>
+          <button id="clear-index" class="button" type="button" hidden>Clear imported results</button>
+        </div>
+        <p id="index-status" class="status" role="status"></p>
+        <ol id="index-list" class="import-list"></ol>
+        <button id="index-more" class="button" type="button" hidden>Show more</button>
+      </details>
+    </section>
+    <div class="archive-grid">
+      <aside class="panel directory" aria-labelledby="cases-heading">
+        <h2 id="cases-heading">Research files</h2>
+        <label for="case-search">Filter by name or domain</label>
+        <input id="case-search" type="search" placeholder="Try Health Canada" autocomplete="off">
+        <p id="case-status" class="help" role="status">Loading the case files…</p>
+        <ul id="cases"></ul>
+      </aside>
+      <section class="panel record" aria-labelledby="record-heading">
+        <div id="record"><h2 id="record-heading">Select a research file</h2><p>Each file brings together archive metadata and a dated check of the old address.</p></div>
+      </section>
+    </div>
+    <section class="panel methods" id="methods" aria-labelledby="methods-heading">
+      <h2 id="methods-heading">How to read the evidence</h2>
+      <div class="method-grid">
+        <div><h3>Archive captures</h3><p>Wayback’s index reports a capture timestamp and recorded status. Replay can fail or show missing assets. A gap between captures tells you about coverage.</p></div>
+        <div><h3>Current URL checks</h3><p>Redirects and HTTP statuses are observations from one network at a stated time. They can vary by country, protocol, or visit.</p></div>
+        <div><h3>Replacement pages</h3><p>Official successor pages are research leads. A department homepage may cover the same service without preserving the old page’s text.</p></div>
+      </div>
+      <p class="links">
+        <a href="https://archive.org/help/wayback_api.php">Wayback availability API ↗</a>
+        <a href="https://github.com/internetarchive/wayback/blob/master/wayback-cdx-server/README.md">Wayback CDX spec ↗</a>
+        <a href="https://index.commoncrawl.org/">Common Crawl indexes ↗</a>
+        <a href="https://www.canada.ca/en/library-archives/services/government/web-social-media-preservation-program/search-web-archive.html">Library and Archives Canada ↗</a>
+        <a href="https://coolcode.ca/opendatagraveyard/">Open Data Graveyard ↗</a>
+      </p>
+    </section>
+  </div>
+</main>
+<footer>
+  <div class="wrap footer-inner"><a href="https://coolcode.ca/">CoolCode.ca</a><span>Independent research tool. Archive captures remain with their respective archives.</span><a href="https://github.com/jsdyer/ghostlinks">Source code ↗</a></div>
+</footer>
+</body>
+</html>

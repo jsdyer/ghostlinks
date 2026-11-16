@@ -1,0 +1,369 @@
+{
+  "version": 1,
+  "date": "2026-11-16",
+  "cases": [
+    {
+      "id": "industry",
+      "title": "Industry Canada",
+      "category": "Federal department",
+      "url": "http://www.ic.gc.ca/eic/site/icgc.nsf/eng/home",
+      "notes": "The department’s former Lotus Notes-style URL now leads to Innovation, Science and Economic Development Canada. Compare the archived department landing page with the current publisher.",
+      "replacement": "https://ised-isde.canada.ca/site/ised/en",
+      "captures": [
+        {
+          "date": "20130101215248",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20130101215248/http://www.ic.gc.ca:80/eic/site/icgc.nsf/eng/home",
+          "original": "http://www.ic.gc.ca:80/eic/site/icgc.nsf/eng/home",
+          "anchor": "20130101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.ic.gc.ca%2Feic%2Fsite%2Ficgc.nsf%2Feng%2Fhome&timestamp=20130101"
+        }
+      ],
+      "checked": {
+        "requested": "https://www.ic.gc.ca/eic/site/icgc.nsf/eng/home",
+        "hops": [
+          {
+            "from": "https://www.ic.gc.ca/eic/site/icgc.nsf/eng/home",
+            "code": 301,
+            "to": "https://ised-isde.canada.ca/site/ised/en"
+          }
+        ],
+        "final": "https://ised-isde.canada.ca/site/ised/en",
+        "status": 200,
+        "title": "Innovation, Science and Economic Development Canada | Official site"
+      }
+    },
+    {
+      "id": "immigration",
+      "title": "Citizenship and Immigration Canada",
+      "category": "Federal service",
+      "url": "http://www.cic.gc.ca/english/index.asp",
+      "notes": "The legacy English landing page went through a second government address on the way to the immigration and citizenship service page. The two domains are valuable search terms for dated guidance and official correspondence.",
+      "replacement": "https://www.canada.ca/en/services/immigration-citizenship.html",
+      "captures": [
+        {
+          "date": "20121127160844",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20121127160844/http://www.cic.gc.ca:80/english/index.asp",
+          "original": "http://www.cic.gc.ca:80/english/index.asp",
+          "anchor": "20130101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.cic.gc.ca%2Fenglish%2Findex.asp&timestamp=20130101"
+        },
+        {
+          "date": "20170101231402",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20170101231402/http://www.cic.gc.ca/english/index.asp",
+          "original": "http://www.cic.gc.ca/english/index.asp",
+          "anchor": "20170101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.cic.gc.ca%2Fenglish%2Findex.asp&timestamp=20170101"
+        },
+        {
+          "date": "20171129174643",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20171129174643/http://www.cic.gc.ca:80/english/index.asp",
+          "original": "http://www.cic.gc.ca:80/english/index.asp",
+          "anchor": "20210101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.cic.gc.ca%2Fenglish%2Findex.asp&timestamp=20210101"
+        }
+      ],
+      "checked": {
+        "requested": "https://www.cic.gc.ca/english/index.asp",
+        "hops": [
+          {
+            "from": "https://www.cic.gc.ca/english/index.asp",
+            "code": 301,
+            "to": "https://ircc.canada.ca/english/index.asp"
+          },
+          {
+            "from": "https://ircc.canada.ca/english/index.asp",
+            "code": 301,
+            "to": "https://www.canada.ca/en/services/immigration-citizenship.html"
+          }
+        ],
+        "final": "https://www.canada.ca/en/services/immigration-citizenship.html",
+        "status": 200,
+        "title": "Immigration and citizenship - Canada.ca"
+      }
+    },
+    {
+      "id": "health",
+      "title": "Health Canada",
+      "category": "Federal department",
+      "url": "http://www.hc-sc.gc.ca/index-eng.php",
+      "notes": "This old bilingual-site entry point makes a useful starting point for tracing how health advisories and links moved to Canada.ca. The observed destination is the department landing page.",
+      "replacement": "https://www.canada.ca/en/health-canada.html",
+      "captures": [
+        {
+          "date": "20130102210333",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20130102210333/http://www.hc-sc.gc.ca:80/index-eng.php",
+          "original": "http://www.hc-sc.gc.ca:80/index-eng.php",
+          "anchor": "20130101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.hc-sc.gc.ca%2Findex-eng.php&timestamp=20130101"
+        },
+        {
+          "date": "20170103164701",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20170103164701/http://www.hc-sc.gc.ca:80/index-eng.php",
+          "original": "http://www.hc-sc.gc.ca:80/index-eng.php",
+          "anchor": "20170101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.hc-sc.gc.ca%2Findex-eng.php&timestamp=20170101"
+        },
+        {
+          "date": "20240621153837",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20240621153837/https://www.hc-sc.gc.ca/index-eng.php",
+          "original": "https://www.hc-sc.gc.ca/index-eng.php",
+          "anchor": "20210101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.hc-sc.gc.ca%2Findex-eng.php&timestamp=20210101"
+        }
+      ],
+      "checked": {
+        "requested": "https://www.hc-sc.gc.ca/index-eng.php",
+        "hops": [
+          {
+            "from": "https://www.hc-sc.gc.ca/index-eng.php",
+            "code": 301,
+            "to": "https://www.canada.ca/en/health-canada.html"
+          }
+        ],
+        "final": "https://www.canada.ca/en/health-canada.html",
+        "status": 200,
+        "title": "Health Canada - Canada.ca"
+      }
+    },
+    {
+      "id": "archives",
+      "title": "Library and Archives Canada",
+      "category": "Federal collection",
+      "url": "http://www.bac-lac.gc.ca/eng/Pages/home.aspx",
+      "notes": "The older collection gateway is useful when following obsolete research guides and catalogue citations. Use the present Library and Archives Canada site to look for the named guide or collection.",
+      "replacement": "https://library-archives.canada.ca/eng",
+      "captures": [
+        {
+          "date": "20130105162220",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20130105162220/http://www.bac-lac.gc.ca:80/eng/Pages/home.aspx",
+          "original": "http://www.bac-lac.gc.ca:80/eng/Pages/home.aspx",
+          "anchor": "20130101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.bac-lac.gc.ca%2Feng%2FPages%2Fhome.aspx&timestamp=20130101"
+        },
+        {
+          "date": "20161222135223",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20161222135223/http://www.bac-lac.gc.ca/eng/Pages/home.aspx",
+          "original": "http://www.bac-lac.gc.ca/eng/Pages/home.aspx",
+          "anchor": "20170101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.bac-lac.gc.ca%2Feng%2FPages%2Fhome.aspx&timestamp=20170101"
+        },
+        {
+          "date": "20210103001354",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20210103001354/https://www.bac-lac.gc.ca/eng/Pages/home.aspx",
+          "original": "https://www.bac-lac.gc.ca/eng/Pages/home.aspx",
+          "anchor": "20210101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.bac-lac.gc.ca%2Feng%2FPages%2Fhome.aspx&timestamp=20210101"
+        }
+      ],
+      "checked": {
+        "requested": "https://www.bac-lac.gc.ca/eng/Pages/home.aspx",
+        "hops": [],
+        "final": "https://www.bac-lac.gc.ca/eng/Pages/home.aspx",
+        "status": 503,
+        "title": ""
+      }
+    },
+    {
+      "id": "statistics",
+      "title": "Statistics Canada",
+      "category": "Federal statistics",
+      "url": "http://www.statcan.gc.ca/start-debut-eng.html",
+      "notes": "The original English landing page is recorded under both the main and numbered Statistics Canada hosts in archive metadata. The recent request followed two institutional redirects.",
+      "replacement": "https://www.statcan.gc.ca/en/start",
+      "captures": [
+        {
+          "date": "20130103163130",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20130103163130/http://www.statcan.gc.ca/start-debut-eng.html",
+          "original": "http://www.statcan.gc.ca/start-debut-eng.html",
+          "anchor": "20130101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.statcan.gc.ca%2Fstart-debut-eng.html&timestamp=20130101"
+        },
+        {
+          "date": "20170208191309",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20170208191309/http://www.statcan.gc.ca/start-debut-eng.html",
+          "original": "http://www.statcan.gc.ca/start-debut-eng.html",
+          "anchor": "20170101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.statcan.gc.ca%2Fstart-debut-eng.html&timestamp=20170101"
+        },
+        {
+          "date": "20200506225155",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20200506225155/https://www150.statcan.gc.ca/start-debut-eng.html",
+          "original": "https://www150.statcan.gc.ca/start-debut-eng.html",
+          "anchor": "20210101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.statcan.gc.ca%2Fstart-debut-eng.html&timestamp=20210101"
+        }
+      ],
+      "checked": {
+        "requested": "https://www.statcan.gc.ca/start-debut-eng.html",
+        "hops": [
+          {
+            "from": "https://www.statcan.gc.ca/start-debut-eng.html",
+            "code": 301,
+            "to": "https://www.statcan.gc.ca/eng/start"
+          },
+          {
+            "from": "https://www.statcan.gc.ca/eng/start",
+            "code": 301,
+            "to": "https://www.statcan.gc.ca/en/start"
+          }
+        ],
+        "final": "https://www.statcan.gc.ca/en/start",
+        "status": 200,
+        "title": "Statistics Canada: Canada's national statistical agency"
+      }
+    },
+    {
+      "id": "environment",
+      "title": "Environment Canada",
+      "category": "Federal department",
+      "url": "http://www.ec.gc.ca/default.asp?lang=En",
+      "notes": "This query-string address is an example of an older department gateway. Use the archived landing page and the current department site to locate an older environment or climate publication.",
+      "replacement": "https://www.canada.ca/en/environment-climate-change.html",
+      "captures": [
+        {
+          "date": "20130124203541",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20130124203541/http://www.ec.gc.ca/default.asp?lang=en",
+          "original": "http://www.ec.gc.ca/default.asp?lang=en",
+          "anchor": "20130101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.ec.gc.ca%2Fdefault.asp%3Flang%3DEn&timestamp=20130101"
+        },
+        {
+          "date": "20161228211052",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20161228211052/http://www.ec.gc.ca/default.asp?lang=En",
+          "original": "http://www.ec.gc.ca/default.asp?lang=En",
+          "anchor": "20170101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.ec.gc.ca%2Fdefault.asp%3Flang%3DEn&timestamp=20170101"
+        },
+        {
+          "date": "20170822130614",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20170822130614/http://www.ec.gc.ca/default.asp?lang=en",
+          "original": "http://www.ec.gc.ca/default.asp?lang=en",
+          "anchor": "20210101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.ec.gc.ca%2Fdefault.asp%3Flang%3DEn&timestamp=20210101"
+        }
+      ],
+      "checked": {
+        "requested": "https://www.ec.gc.ca/default.asp?lang=En",
+        "hops": [],
+        "final": "https://www.ec.gc.ca/default.asp?lang=En",
+        "status": 503,
+        "title": ""
+      }
+    },
+    {
+      "id": "canadian-content",
+      "title": "The federal government gateway",
+      "category": "Federal portal",
+      "url": "http://www.canada.gc.ca/",
+      "notes": "This domain was an earlier access point to the Government of Canada. Compare the closest archived captures with the present Canada.ca homepage.",
+      "replacement": "https://www.canada.ca/",
+      "captures": [
+        {
+          "date": "20121227185840",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20121227185840/http://www.canada.gc.ca/",
+          "original": "http://www.canada.gc.ca/",
+          "anchor": "20130101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.canada.gc.ca%2F&timestamp=20130101"
+        },
+        {
+          "date": "20190617225255",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20190617225255/https://canada.gc.ca./",
+          "original": "https://canada.gc.ca./",
+          "anchor": "20170101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.canada.gc.ca%2F&timestamp=20170101"
+        },
+        {
+          "date": "20210125124802",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20210125124802/https://canada.gc.ca./",
+          "original": "https://canada.gc.ca./",
+          "anchor": "20210101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.canada.gc.ca%2F&timestamp=20210101"
+        }
+      ],
+      "checked": {
+        "requested": "https://www.canada.gc.ca/",
+        "hops": [
+          {
+            "from": "https://www.canada.gc.ca/",
+            "code": 302,
+            "to": "https://www.canada.ca/"
+          }
+        ],
+        "final": "https://www.canada.ca/",
+        "status": 200,
+        "title": "Canada.ca"
+      }
+    },
+    {
+      "id": "nova-scotia",
+      "title": "Nova Scotia’s government gateway",
+      "category": "Provincial portal",
+      "url": "http://www.gov.ns.ca/",
+      "notes": "Older citations may refer to gov.ns.ca, while the observed redirect ends at novascotia.ca. The captures are useful starting points for locating obsolete policy or departmental page paths.",
+      "replacement": "https://www.novascotia.ca/",
+      "captures": [
+        {
+          "date": "20121008102809",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20121008102809/https://www.gov.ns.ca/",
+          "original": "https://www.gov.ns.ca/",
+          "anchor": "20130101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.gov.ns.ca%2F&timestamp=20130101"
+        },
+        {
+          "date": "20200805151337",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20200805151337/https://gov.ns.ca/",
+          "original": "https://gov.ns.ca/",
+          "anchor": "20170101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.gov.ns.ca%2F&timestamp=20170101"
+        },
+        {
+          "date": "20201109220644",
+          "status": "200",
+          "archive": "https://web.archive.org/web/20201109220644/https://gov.ns.ca/",
+          "original": "https://gov.ns.ca/",
+          "anchor": "20210101",
+          "source": "https://archive.org/wayback/available?url=http%3A%2F%2Fwww.gov.ns.ca%2F&timestamp=20210101"
+        }
+      ],
+      "checked": {
+        "requested": "https://www.gov.ns.ca/",
+        "hops": [
+          {
+            "from": "https://www.gov.ns.ca/",
+            "code": 301,
+            "to": "https://novascotia.ca/"
+          },
+          {
+            "from": "https://novascotia.ca/",
+            "code": 302,
+            "to": "https://www.novascotia.ca/"
+          }
+        ],
+        "final": "https://www.novascotia.ca/",
+        "status": 200,
+        "title": "Government of Nova Scotia"
+      }
+    }
+  ]
+}
